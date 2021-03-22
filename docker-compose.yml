@@ -1,0 +1,93 @@
+version: "3.7"
+
+networks:
+  monitor-net:
+    driver: bridge
+  chain:
+
+services:
+  geth:
+    image: ethereum/client-go:${GETH_VERSION}
+    entrypoint: /bin/sh
+    volumes:
+      - ./geth-data:/root/.ethereum
+      - ./scripts:/root/scripts:ro
+    networks:
+      - chain
+    ports:
+      - 30303:30303/tcp
+      - 30303:30303/udp
+      - 6060:6060  # metrics endpoint
+    env_file: .env
+    command: /root/scripts/start-geth.sh
+    restart: always
+  beacon_node:
+    image: sigp/lighthouse:${LIGHTHOUSE_VERSION}
+    volumes:
+      - ./lighthouse-data:/root/.lighthouse
+      - ./scripts:/root/scripts:ro
+    networks:
+      - chain
+    ports:
+      - 5052:5052/tcp
+      - 5053:5053/tcp
+      - 5054:5054/tcp  # metrics endpoint
+      - 9000:9000/tcp
+      - 9000:9000/udp
+    env_file: .env
+    command: sh /root/scripts/start-beacon-node.sh
+    restart: always
+  validator_client:
+    image: sigp/lighthouse:${LIGHTHOUSE_VERSION}
+    volumes:
+      - ./lighthouse-data:/root/.lighthouse
+      - ./scripts:/root/scripts:ro
+      - ./validator_keys:/root/validator_keys:ro
+    depends_on:
+      - beacon_node
+    networks:
+      - chain
+    ports:
+      - "5064:5064/tcp"  # metrics endpoint
+    env_file: .env
+    command: sh /root/scripts/start-validator-client.sh
+    restart: on-failure
+  node-exporter:
+    image: prom/node-exporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command: 
+      - '--path.procfs=/host/proc' 
+      - '--path.sysfs=/host/sys'
+      - --collector.filesystem.ignored-mount-points
+      - "^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)"
+    ports:
+      - "9100:9100"
+    networks:
+      - monitor-net
+    restart: always
+  prometheus:
+    build:
+      context: ./monitoring/prometheus
+    volumes:
+      - prometheus-data:/prometheus
+    ports:
+      - "9090:9090"
+    networks:
+      - monitor-net
+      - chain 
+  grafana:
+    build:
+      context: ./monitoring/grafana
+    volumes:
+      - grafana-data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - monitor-net
+volumes:
+  grafana-data:
+  prometheus-data:
+  targets:

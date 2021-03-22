@@ -1,0 +1,22 @@
+global:
+    scrape_interval: 15s
+    external_labels:
+        monitor: 'lighthouse-docker'
+
+scrape_configs:
+    - job_name: prometheus
+      static_configs:
+        - targets: ['prometheus:9090']
+    - job_name: node
+      static_configs:
+        - targets: ['node-exporter:9100']
+    - job_name: geth
+      metrics_path: /debug/metrics/prometheus
+      static_configs:
+        - targets: ['geth:6060']
+    - job_name: 'lighthouse'
+      static_configs:
+        - targets: ['beacon_node:5054']
+    - job_name: 'validator'
+      static_configs:
+        - targets: ['validator_client:5064']
