@@ -51,7 +51,7 @@ services:
       - "5064:5064/tcp"  # metrics endpoint
     env_file: .env
     command: sh /root/scripts/start-validator-client.sh
-    restart: on-failure
+    restart: always
   node-exporter:
     image: prom/node-exporter
     volumes:
@@ -77,7 +77,8 @@ services:
       - "9090:9090"
     networks:
       - monitor-net
-      - chain 
+      - chain
+    restart: always 
   grafana:
     build:
       context: ./monitoring/grafana
@@ -87,6 +88,7 @@ services:
       - "3000:3000"
     networks:
       - monitor-net
+    restart: always
 volumes:
   grafana-data:
   prometheus-data:
