@@ -15,15 +15,13 @@
   "editable": false,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 12,
+  "id": 7,
   "links": [],
   "panels": [
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -38,10 +36,9 @@
         "content": "\n# Lighthouse Metrics\n\nMetrics collected from a Lighthouse Beacon Node.\n\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
@@ -56,9 +53,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "format": "none",
@@ -145,9 +140,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "format": "none",
@@ -234,9 +227,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "format": "locale",
@@ -321,7 +312,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -352,7 +342,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -422,9 +412,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "format": "none",
@@ -511,9 +499,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "format": "none",
@@ -600,9 +586,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "format": "locale",
@@ -682,9 +666,7 @@
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -699,10 +681,9 @@
         "content": "\n### Consensus\n\nOverview of consensus between nodes.\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
@@ -715,7 +696,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -747,7 +727,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -814,7 +794,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -846,7 +825,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -915,7 +894,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -947,7 +925,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1014,7 +992,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1046,7 +1023,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1115,7 +1092,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1147,7 +1123,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1216,7 +1192,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1248,7 +1223,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1318,7 +1293,6 @@
       "description": "The number of attesters for which we have seen an attestation. That attestation is not necessarily included in the chain.",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1350,7 +1324,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1420,7 +1394,6 @@
       "description": "The number of aggregators for which we have seen an attestation. That attestation is not necessarily included in the chain.",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1452,7 +1425,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1521,7 +1494,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1553,7 +1525,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1620,7 +1592,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1652,7 +1623,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1719,7 +1690,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1751,7 +1721,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -1818,7 +1788,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1850,7 +1819,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": true,
       "renderer": "flot",
@@ -1916,7 +1885,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -1948,7 +1916,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2009,9 +1977,7 @@
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -2026,10 +1992,9 @@
         "content": "\n### Networking\n\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
@@ -2042,7 +2007,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2074,7 +2038,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2141,7 +2105,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2172,7 +2135,7 @@
         "alertThreshold": true
       },
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2234,7 +2197,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "mappings": [],
           "max": 1000,
           "min": 0,
@@ -2278,7 +2240,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "targets": [
         {
           "expr": "discovery_sessions",
@@ -2296,7 +2258,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "mappings": [],
           "min": 0,
           "thresholds": {
@@ -2339,7 +2300,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "targets": [
         {
           "expr": "discovery_queue_size",
@@ -2358,7 +2319,6 @@
       "description": "The peers requesting routing information from us. Requests per second",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -2400,7 +2360,7 @@
         "showUnfilled": true,
         "text": {}
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "targets": [
         {
           "expr": "discovery_reqs_per_ip",
@@ -2419,9 +2379,7 @@
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -2436,10 +2394,9 @@
         "content": "\n### Logging\n\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
@@ -2452,7 +2409,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2481,7 +2437,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2547,7 +2503,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2578,7 +2533,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2644,7 +2599,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2673,7 +2627,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2739,7 +2693,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2768,7 +2721,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2828,9 +2781,7 @@
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -2845,10 +2796,9 @@
         "content": "\n### Core BeaconChain Functions\n\nTiming of core `BeaconChain` functions and syncing.\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
@@ -2861,7 +2811,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2890,7 +2839,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -2959,7 +2908,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -2988,7 +2936,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3054,7 +3002,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3083,7 +3030,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3149,7 +3096,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3178,7 +3124,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3244,7 +3190,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3273,7 +3218,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3338,7 +3283,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3367,7 +3311,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3434,7 +3378,6 @@
       "description": "Time taken to calculate the tree hash root of a BeaconState during block processing.",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3463,7 +3406,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3530,7 +3473,6 @@
       "description": "Time taken to calculate the tree hash root of a BeaconState during block processing.",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3559,7 +3501,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3619,9 +3561,7 @@
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -3636,19 +3576,16 @@
         "content": "\n### Task Manager\nActive long standing threads\n\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -3663,19 +3600,16 @@
         "content": "\n### HTTP Server\n\nUsed by Prometheus and the RESTful API.\n\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
     {
       "datasource": null,
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "gridPos": {
@@ -3690,10 +3624,9 @@
         "content": "\n### Database\n\nStats about the on-disk database (LevelDB)\n\n\n\n",
         "mode": "markdown"
       },
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "timeFrom": null,
       "timeShift": null,
-      "title": "",
       "transparent": true,
       "type": "text"
     },
@@ -3707,9 +3640,7 @@
       ],
       "datasource": "Prometheus",
       "fieldConfig": {
-        "defaults": {
-          "custom": {}
-        },
+        "defaults": {},
         "overrides": []
       },
       "fontSize": "100%",
@@ -3827,7 +3758,6 @@
       "description": "",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3856,7 +3786,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -3922,7 +3852,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -3951,7 +3880,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -4017,7 +3946,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -4046,7 +3974,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -4112,7 +4040,6 @@
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -4141,7 +4068,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -4208,7 +4135,6 @@
       "description": "Time taken to calculate the tree hash root of a BeaconState during block processing.",
       "fieldConfig": {
         "defaults": {
-          "custom": {},
           "links": []
         },
         "overrides": []
@@ -4237,7 +4163,7 @@
       "links": [],
       "nullPointMode": "null",
       "percentage": false,
-      "pluginVersion": "7.4.3",
+      "pluginVersion": "7.5.0",
       "pointradius": 2,
       "points": false,
       "renderer": "flot",
@@ -4295,19 +4221,20 @@
       }
     }
   ],
-  "refresh": "5s",
+  "refresh": "10s",
   "schemaVersion": 27,
   "style": "dark",
   "tags": [
     "eth2.0",
-    "ethereum",
-    "lighthouse"
+    "lighthouse",
+    "beacon",
+    "ethereum"
   ],
   "templating": {
     "list": []
   },
   "time": {
-    "from": "now-15m",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {
@@ -4336,6 +4263,6 @@
   },
   "timezone": "",
   "title": "Lighthouse",
-  "uid": "yY7PIGdZd",
-  "version": 5
+  "uid": "U62JTm_Gz",
+  "version": 13
 }
