@@ -17,9 +17,11 @@ services:
     ports:
       - 30303:30303/tcp
       - 30303:30303/udp
+      - 8545:8545
       - 6060:6060  # metrics endpoint
     env_file: .env
     command: /root/scripts/start-geth.sh
+    #command: /root/scripts/start-geth-prune.sh
     restart: always
   beacon_node:
     image: sigp/lighthouse:${LIGHTHOUSE_VERSION}
