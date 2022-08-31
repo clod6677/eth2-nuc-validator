@@ -48,9 +48,9 @@ exec lighthouse \
 	--debug-level $DEBUG_LEVEL \
 	--network $NETWORK \
 	beacon_node \
-	--eth1-endpoints http://geth:8545,https://mainnet.infura.io/v3/f7a719a8dc5c4f1cb8aad0508de8ee31 \
-	--http \
-	--http-address 0.0.0.0 \
+        --http \
+        --execution-endpoint http://geth:8551 \
+        --execution-jwt /root/scripts/jwtsecret \
 	$METRICS_PARAMS \
 	$GRAFFITI_PARAM \
 	$ETH1_FLAG \
