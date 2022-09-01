@@ -4,4 +4,4 @@ geth-data/
 lighthouse-data/
 validator_keys/
 .env
-
+scripts/jwtsecret

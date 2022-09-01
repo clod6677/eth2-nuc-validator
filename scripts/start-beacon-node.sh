@@ -49,6 +49,7 @@ exec lighthouse \
 	--network $NETWORK \
 	beacon_node \
         --http \
+        --http-address 0.0.0.0 \
         --execution-endpoint http://geth:8551 \
         --execution-jwt /root/scripts/jwtsecret \
 	$METRICS_PARAMS \
