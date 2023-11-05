@@ -1,0 +1,29 @@
+version: "3.7"
+
+networks:
+  monitor-net:
+    driver: bridge
+  chain:
+
+services:
+  geth:
+    image: ethereum/client-go:${GETH_VERSION}
+    entrypoint: /bin/sh
+    volumes:
+      - ./geth-data:/root/.ethereum
+      - ./scripts:/root/scripts:ro
+    networks:
+      - chain
+    ports:
+      - 30303:30303/tcp
+      - 30303:30303/udp
+      - 8551:8551
+    env_file: .env
+    #command: /root/scripts/start-geth.sh
+    #command: /root/scripts/start-geth-prune.sh
+    #command: /root/scripts/start-geth-removedb.sh
+    command: sh
+volumes:
+  grafana-data:
+  prometheus-data:
+  targets:
