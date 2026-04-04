@@ -52,9 +52,10 @@ exec lighthouse \
         --http-address 0.0.0.0 \
         --execution-endpoint http://geth:8551 \
         --execution-jwt /root/scripts/jwtsecret \
+	--builder http://mev_boost:18550 \
 	$METRICS_PARAMS \
 	$GRAFFITI_PARAM \
-	$ETH1_FLAG \
+	#$ETH1_FLAG \
 	$SLASHER_FLAG \
 	$SEARCH_BLOCKS_PARAM \
 	$PRIVATE_FLAG \

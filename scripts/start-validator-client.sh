@@ -56,9 +56,11 @@ if [ "$START_VALIDATOR" != "" ]; then
 	fi
 
 	exec lighthouse \
+		validator_client \
 		--debug-level $DEBUG_LEVEL \
 		--network $NETWORK \
-		validator \
-		$METRICS_PARAMS \
-		--beacon-nodes $VOTING_ETH2_NODES
+                --suggested-fee-recipient $VALIDATOR_FEE_RECIPIENT_ADDR \
+		--beacon-nodes $VOTING_ETH2_NODES \
+		--builder-proposals \
+		$METRICS_PARAMS
 fi
